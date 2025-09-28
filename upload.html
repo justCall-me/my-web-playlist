@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <h2 class="h2">Upload Music</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <div class="buttonContainer">
+            <input type="file" id="inputFiles" name="files[]" multiple>
+            <button type="button" class="customBtn" id="chooseBtn">Choose Files</button>
+            <button type="button" class="customBtn" id="acceptBtn">Upload</button>
+            <script src="assets/js/logic.js"></script>
+        </div>
+    </form>
+    <div id="fileList"></div>
+    
+</body>
+</html>
